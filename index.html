@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sugar and Whisk Baking Co.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
@@ -15,151 +14,94 @@
       color: #4a2e2e;
     }
     header.hero {
-      height: 100vh;
-      background: url('images/IMG_9756.jpeg') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background: linear-gradient(to bottom right, #ffe5ec, #ffe2f3);
       text-align: center;
-      padding: 20px;
-      position: relative;
-    }
-    header.hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255, 245, 247, 0.85);
-      z-index: 0;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
+      padding: 60px 20px 40px;
     }
     .brand-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
       color: #d14e78;
-      margin: 0 0 10px;
+      margin: 0;
     }
     .tagline {
-      font-size: 1.3rem;
-      color: #6e4b4b;
-      margin-bottom: 30px;
+      font-size: 1.25rem;
+      color: #865a5a;
     }
-    .hero-button {
-      background-color: #d14e78;
-      color: white;
-      border: none;
-      padding: 14px 32px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background 0.3s ease;
+    section.intro, section.cta {
+      text-align: center;
+      padding: 40px 20px;
     }
-    .hero-button:hover {
-      background-color: #b34068;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
+    section.intro h2, section.cta h2 {
       font-size: 2rem;
       color: #d14e78;
+      margin-bottom: 10px;
+    }
+    .gallery-preview {
+      padding: 40px 20px;
+    }
+    .gallery-preview h2 {
       text-align: center;
+      color: #d14e78;
+      font-size: 2rem;
       margin-bottom: 30px;
-      position: relative;
     }
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      gap: 20px;
+      padding: 0 10px;
     }
-    .gallery-item {
-      text-align: center;
-    }
-    .gallery-item img {
+    .gallery-grid img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
-    .gallery-item img:hover {
-      transform: scale(1.03);
-    }
-    .label {
-      margin-top: 10px;
-      font-weight: 600;
-      color: #6e4b4b;
-    }
-    .cta {
-      text-align: center;
-    }
-    .cta a.button {
-      display: inline-block;
+    .view-gallery {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
       background-color: #d14e78;
       color: white;
-      padding: 12px 28px;
-      border-radius: 25px;
-      font-weight: bold;
       text-decoration: none;
-      margin-top: 20px;
-    }
-    .cta a.button:hover {
-      background-color: #b34068;
+      border-radius: 8px;
+      width: fit-content;
+      font-weight: 600;
     }
     footer {
       text-align: center;
-      padding: 30px 20px;
-      background: #fff0f6;
+      padding: 20px;
       font-size: 0.9rem;
+      background: #fff0f6;
       color: #a67878;
     }
   </style>
 </head>
 <body>
   <header class="hero">
-    <div class="hero-content">
-      <h1 class="brand-name">Sugar and Whisk Baking Co.</h1>
-      <p class="tagline">Whimsical sweets for every celebration.</p>
-      <a href="#bakes"><button class="hero-button">Order Now</button></a>
-    </div>
+    <h1 class="brand-name">Sugar and Whisk Baking Co.</h1>
+    <p class="tagline">Whimsical sweets made to be remembered.</p>
   </header>
 
   <section class="intro">
     <h2>Sweeten Every Occasion</h2>
-    <p style="text-align:center; max-width: 700px; margin: auto;">From colorful cake pops to custom cakes, our handmade creations bring joy to birthdays, weddings, and every treat-worthy day in between. We bake with love, flair, and enough frosting to make you smile.</p>
+    <p>We handcraft cookies, cakes, cupcakes, and cake pops that look as good as they taste. Whether it’s a birthday, a wedding, or just a Monday that needs sprinkles, we’ve got something special for you.</p>
   </section>
 
-  <section class="gallery" id="bakes">
-    <h2>Our Bakes</h2>
+  <section class="gallery-preview">
+    <h2>Our Creations</h2>
     <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="images/IMG_0520.jpeg" alt="Cake Pops">
-        <div class="label">Cake Pops</div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/IMG_9756.jpeg" alt="Cakes">
-        <div class="label">Cakes</div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/IMG_0695.jpeg" alt="Cupcakes">
-        <div class="label">Cupcakes</div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/IMG_0491.jpeg" alt="Cookies">
-        <div class="label">Cookies</div>
-      </div>
+      <img src="images/IMG_0520.jpeg" alt="Pink Bunny Pops">
+      <img src="images/IMG_9756.jpeg" alt="Pink Birthday Cake">
+      <img src="images/IMG_0491.jpeg" alt="Cinnamon Swirl Cookie">
+      <img src="images/IMG_0695.jpeg" alt="Decorated Cupcakes">
     </div>
+    <a class="view-gallery" href="gallery.html">View Full Gallery</a>
   </section>
 
   <section class="cta">
     <h2>Ready to Order?</h2>
-    <p>Email us at <a href="mailto:sugarandwhiskbaking@gmail.com">sugarandwhiskbaking@gmail.com</a> or DM us on Instagram to get started.</p>
-    <a class="button" href="mailto:sugarandwhiskbaking@gmail.com">Start Your Order</a>
+    <p>Email us at <a href="mailto:sugarandwhiskbaking@gmail.com">sugarandwhiskbaking@gmail.com</a></p>
   </section>
 
   <footer>
