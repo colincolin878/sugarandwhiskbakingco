@@ -2,43 +2,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sugar and Whisk Baking Co.</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugar and Whisk Baking Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf9;
+      color: #4a2e2e;
+    }
+    header.hero {
+      background: linear-gradient(to bottom right, #ffe5ec, #ffe2f3);
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .logo {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+    .brand-name {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #d14e78;
+      margin: 0;
+    }
+    .tagline {
+      font-size: 1.25rem;
+      color: #865a5a;
+    }
+    section.intro, section.cta {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    section.intro h2, section.cta h2 {
+      font-size: 2rem;
+      color: #d14e78;
+      margin-bottom: 10px;
+    }
+    .gallery {
+      padding: 40px 20px;
+    }
+    .gallery h2 {
+      text-align: center;
+      color: #d14e78;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+    a {
+      color: #d14e78;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #fff0f6;
+      color: #a67878;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="images/Logo.jpeg" alt="Sugar and Whisk Baking Co. Logo" class="logo">
-        <h1>Sugar and Whisk Baking Co.</h1>
-        <p class="tagline">Baked to be remembered.</p>
-    </header>
+  <header class="hero">
+    <img src="images/Logo.jpeg" alt="Sugar and Whisk Logo" class="logo">
+    <h1 class="brand-name">Sugar and Whisk Baking Co.</h1>
+    <p class="tagline">Whimsical sweets made to be remembered.</p>
+  </header>
 
-    <section class="gallery">
-        <h2>Our Sweet Creations</h2>
-        <div class="gallery-grid">
-            <img src="images/IMG_0719.jpeg" alt="Fruity Cookies">
-            <img src="images/IMG_0491.jpeg" alt="Cinnamon Swirl Cookie">
-            <img src="images/IMG_0520.jpeg" alt="Pink Bunny Pops">
-            <img src="images/IMG_0576.jpeg" alt="Purple Floral Cake">
-            <img src="images/IMG_0616.jpeg" alt="Chocolate Marshmallow Cookies">
-            <img src="images/IMG_0695.jpeg" alt="Chocolate Flower Cupcakes">
-            <img src="images/IMG_0698.jpeg" alt="Vanilla Flower Cupcakes">
-            <img src="images/IMG_9756.jpeg" alt="Pink Birthday Cake">
-        </div>
-    </section>
+  <section class="intro">
+    <h2>Sweeten Every Occasion</h2>
+    <p>At Sugar and Whisk, we handcraft cookies, cakes, cupcakes, and cake pops that look as good as they taste. Whether it’s a birthday, a wedding, or just a Monday that needs sprinkles, we’ve got something special for you.</p>
+  </section>
 
-    <section class="about">
-        <h2>About Us</h2>
-        <p>At Sugar and Whisk, we believe every treat should be as memorable as the moment it's made for. From whimsical cupcakes to decadent cookies and custom cakes, every item is made with care, color, and creativity.</p>
-    </section>
+  <section class="gallery">
+    <h2>Our Bakes</h2>
+    <div class="gallery-grid">
+      <img src="images/IMG_0719.jpeg" alt="Fruity Marshmallow Cookies">
+      <img src="images/IMG_0491.jpeg" alt="Cinnamon Swirl Cookie">
+      <img src="images/IMG_0520.jpeg" alt="Pink Bunny Pops">
+      <img src="images/IMG_0576.jpeg" alt="Purple Floral Cake">
+      <img src="images/IMG_0616.jpeg" alt="Chocolate Marshmallow Cookies">
+      <img src="images/IMG_0695.jpeg" alt="Chocolate Flower Cupcakes">
+      <img src="images/IMG_0698.jpeg" alt="Vanilla Flower Cupcakes">
+      <img src="images/IMG_9756.jpeg" alt="Pink Birthday Cake">
+    </div>
+  </section>
 
-    <section class="contact">
-        <h2>Place an Order</h2>
-        <p>Contact us at <a href="mailto:sugarandwhiskbaking@gmail.com">sugarandwhiskbaking@gmail.com</a> or DM us on Instagram to order!</p>
-    </section>
+  <section class="cta">
+    <h2>Ready to Order?</h2>
+    <p>Email us at <a href="mailto:sugarandwhiskbaking@gmail.com">sugarandwhiskbaking@gmail.com</a> or DM us on Instagram to get started!</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Sugar and Whisk Baking Co.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Sugar and Whisk Baking Co. | Made with love and butter.</p>
+  </footer>
 </body>
 </html>
