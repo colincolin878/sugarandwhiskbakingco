@@ -1,111 +1,157 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sugar and Whisk Baking Co.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fffaf9;
-      color: #4a2e2e;
-    }
-    header.hero {
-      background: linear-gradient(to bottom right, #ffe5ec, #ffe2f3);
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-    .brand-name {
-      font-family: 'Pacifico', cursive;
-      font-size: 3rem;
-      color: #d14e78;
-      margin: 0;
-    }
-    .tagline {
-      font-size: 1.25rem;
-      color: #865a5a;
-    }
-    section.intro, section.cta {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    section.intro h2, section.cta h2 {
-      font-size: 2rem;
-      color: #d14e78;
-      margin-bottom: 10px;
-    }
-    .gallery-preview {
-      padding: 40px 20px;
-    }
-    .gallery-preview h2 {
-      text-align: center;
-      color: #d14e78;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 10px;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    .view-gallery {
-      display: block;
-      margin: 30px auto 0;
-      padding: 12px 24px;
-      background-color: #d14e78;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      width: fit-content;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      background: #fff0f6;
-      color: #a67878;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sugar & Whisk Baking Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fffaf9;
+    color: #4a2e2e;
+  }
+  header.hero {
+    background: linear-gradient(to bottom right, #ffe5ec, #ffe2f3);
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+  }
+  .brand-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    color: #d14e78;
+    margin: 0 0 0.5rem;
+  }
+  .tagline {
+    font-size: 1.25rem;
+    color: #865a5a;
+    margin-bottom: 2rem;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #d14e78;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .cta-button:hover {
+    background-color: #b73d65;
+  }
+  section {
+    padding: 4rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h2.section-title {
+    font-size: 2rem;
+    color: #d14e78;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .signature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  .signature-item {
+    text-align: center;
+  }
+  .signature-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 1rem;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    height: 200px;
+    object-fit: cover;
+  }
+  footer {
+    background: #fff0f6;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #a67878;
+    font-size: 0.9rem;
+  }
+</style>
 </head>
 <body>
-  <header class="hero">
-    <h1 class="brand-name">Sugar and Whisk Baking Co.</h1>
-    <p class="tagline">Whimsical sweets made to be remembered.</p>
-  </header>
 
-  <section class="intro">
-    <h2>Sweeten Every Occasion</h2>
-    <p>We handcraft cookies, cakes, cupcakes, and cake pops that look as good as they taste. Whether it’s a birthday, a wedding, or just a Monday that needs sprinkles, we’ve got something special for you.</p>
-  </section>
+<header class="hero">
+  <h1 class="brand-name">Sugar & Whisk</h1>
+  <p class="tagline">Whimsical sweets made to be remembered.</p>
+  <!-- Update this URL to point at your order form -->
+  <a href="https://example.com/order" class="cta-button">Start an order</a>
+</header>
 
-  <section class="gallery-preview">
-    <h2>Our Creations</h2>
-    <div class="gallery-grid">
-      <img src="images/IMG_0520.jpeg" alt="Pink Bunny Pops">
-      <img src="images/IMG_9756.jpeg" alt="Pink Birthday Cake">
-      <img src="images/IMG_0491.jpeg" alt="Cinnamon Swirl Cookie">
-      <img src="images/IMG_0695.jpeg" alt="Decorated Cupcakes">
+<section>
+  <h2 class="section-title">Signature Treats</h2>
+  <div class="signature-grid">
+    <!-- Swap these src values with your favourite hero images in /images or via external links -->
+    <div class="signature-item">
+      <img src="images/hero-cake.jpg" alt="Signature Cake">
+      <h3>Show‑Stopping Cakes</h3>
+      <p>Custom cakes for birthdays, weddings and all celebrations.</p>
     </div>
-    <a class="view-gallery" href="gallery.html">View Full Gallery</a>
-  </section>
+    <div class="signature-item">
+      <img src="images/hero-cupcakes.jpg" alt="Signature Cupcakes">
+      <h3>Cupcake Flights</h3>
+      <p>Mix‑and‑match minis to sample all our flavours.</p>
+    </div>
+    <div class="signature-item">
+      <img src="images/hero-pops.jpg" alt="Signature Cake Pops">
+      <h3>Cake Pops</h3>
+      <p>Perfectly portioned pops for parties and favours.</p>
+    </div>
+  </div>
+</section>
 
-  <section class="cta">
-    <h2>Ready to Order?</h2>
-    <p>Email us at <a href="mailto:sugarandwhiskbaking@gmail.com">sugarandwhiskbaking@gmail.com</a></p>
-  </section>
+<section>
+  <h2 class="section-title">Our Gallery</h2>
+  <div id="gallery" class="gallery-grid">
+    <!-- Gallery images will be populated by the script below -->
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Sugar and Whisk Baking Co. | Made with love and butter.</p>
-  </footer>
+<section>
+  <h2 class="section-title">Ready to Order?</h2>
+  <p style="text-align:center;">Email us at <a href="mailto:sugarandwhiskbaking@gmail.com">sugarandwhiskbaking@gmail.com</a> to bring your vision to life.</p>
+</section>
+
+<footer>
+  © 2025 Sugar & Whisk Baking Co. | Made with love and butter.
+</footer>
+
+<script>
+  // TODO: Replace PHOTO_FEED_URL with the Web App URL from your Google Apps Script
+  const PHOTO_FEED_URL = 'https://script.google.com/macros/s/REPLACE_ME/exec';
+
+  fetch(PHOTO_FEED_URL)
+    .then(resp => resp.json())
+    .then(data => {
+      const gallery = document.getElementById('gallery');
+      // Limit to first 45 images for performance
+      data.slice(0, 45).forEach(item => {
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = item.alt || '';
+        gallery.appendChild(img);
+      });
+    })
+    .catch(err => console.error('Error loading gallery:', err));
+</script>
+
 </body>
 </html>
